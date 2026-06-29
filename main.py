@@ -29,7 +29,7 @@ DEFAULT_CONFIG = {
     "AI_CONFIDENCE_THRESHOLD": 80
 }
 
-TELEGRAM_TOKEN = "8700496618:AAH2ORNlycYknzk01z6e-6SvaXQVIm1Gh_g"
+TELEGRAM_TOKEN = "8700496618:AAHMTX3TuWBE1VwkxXQb12YuS3LYHYjGUUs"
 if not os.path.exists("config.json"):
     with open("config.json", "w") as f:
         json.dump(DEFAULT_CONFIG, f, indent=4)
