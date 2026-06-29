@@ -28,7 +28,7 @@ DEFAULT_CONFIG = {
     "WHALE_THRESHOLD_USD": 100000.0,  # الحد الأدنى لاعتبار الصفقة تابعة لحوت
     "AI_CONFIDENCE_THRESHOLD": 80
 TELEGRAM_TOKEN = "8700496618:AAH2ORNlycYknzk01z6e-6SvaXQVIm1Gh_g"
-
+}
 
 if not os.path.exists("config.json"):
     with open("config.json", "w") as f:
