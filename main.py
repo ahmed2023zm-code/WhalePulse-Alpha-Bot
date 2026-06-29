@@ -27,19 +27,13 @@ DEFAULT_CONFIG = {
     "TIMEFRAMES": ["1h", "4h"],
     "WHALE_THRESHOLD_USD": 100000.0,  # الحد الأدنى لاعتبار الصفقة تابعة لحوت
     "AI_CONFIDENCE_THRESHOLD": 80
-}
+TELEGRAM_TOKEN = "8700496618:AAH2ORNlycYknzk01z6e-6SvaXQVIm1Gh_g"
+
 
 if not os.path.exists("config.json"):
     with open("config.json", "w") as f:
         json.dump(DEFAULT_CONFIG, f, indent=4)
 
-with open("config.json", "r") as f:
-    config = json.load(f)
-
-# التحقق الصارم من التوكن (1. حماية قصوى ضد التسريب على جيتهاب)
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN") or config["TELEGRAM_TOKEN"]
-if TELEGRAM_TOKEN == "YOUR_TOKEN_HERE" or not TELEGRAM_TOKEN:
-    raise ValueError("⚠️ خطأ أمني: يجب وضع توكن التليجرام الحقيقي في ملف config.json أو متغيرات البيئة!")
 
 CHANNEL_CHAT_ID = config["CHANNEL_CHAT_ID"]
 BINANCE_API_BASE = "https://api.binance.com/api/v3"
