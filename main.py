@@ -67,7 +67,7 @@ class DatabaseAndCacheController:
             """)
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS active_trades (
-                    trade_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+                    trade_id INTEGER PRIMARY KEY AUTOINCREMENT,
                     symbol TEXT, direction TEXT, entry_price REAL, tp1 REAL, sl REAL, status TEXT DEFAULT 'OPEN'
                 )
             """)  # جدول مخصص لـ 9. تتبع وضرب الأهداف لاحقاً
