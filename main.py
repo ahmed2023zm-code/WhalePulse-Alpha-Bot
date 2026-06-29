@@ -35,7 +35,7 @@ if not os.path.exists("config.json"):
         json.dump(DEFAULT_CONFIG, f, indent=4)
 
 
-CHANNEL_CHAT_ID = config["CHANNEL_CHAT_ID"]
+CHANNEL_CHAT_ID = "@WhalePulseAlphaSignals"
 BINANCE_API_BASE = "https://api.binance.com/api/v3"
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(levelname)s [%(name)s] %(message)s")
