@@ -25,11 +25,11 @@ DEFAULT_CONFIG = {
     "CHANNEL_CHAT_ID": "@WhalePulseAlphaSignals",
     "MONITORED_ASSETS": ["BTCUSDT", "ETHUSDT", "SOLUSDT"],
     "TIMEFRAMES": ["1h", "4h"],
-    "WHALE_THRESHOLD_USD": 100000.0,  # الحد الأدنى لاعتبار الصفقة تابعة لحوت
+    "WHALE_THRESHOLD_USD": 100000.0,
     "AI_CONFIDENCE_THRESHOLD": 80
-TELEGRAM_TOKEN = "8700496618:AAH2ORNlycYknzk01z6e-6SvaXQVIm1Gh_g"
 }
 
+TELEGRAM_TOKEN = "8700496618:AAH2ORNlycYknzk01z6e-6SvaXQVIm1Gh_g"
 if not os.path.exists("config.json"):
     with open("config.json", "w") as f:
         json.dump(DEFAULT_CONFIG, f, indent=4)
